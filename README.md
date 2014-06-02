@@ -1,13 +1,13 @@
 obnam Cookbook
 ==============
 
-Installs obnam ppa, creates user keys and sets up a typical cron script
+Installs obnam ppa, creates user keys and sets up a typical cron script. 
 Assumes that you want to upload all files in *backup_targets* by SFTP to *backup_host* and store it according to *keep* schedule.
 
 Requirements
 ------------
 On the *backup_host* you will need to create user *backup_id* with home dir /home/*backup_id* where backups will be stored.
-Then set up ssh based authentication using ~root/.ssh/id_rsa.pub source machine.
+Then set up ssh based authentication using ~root/.ssh/id_rsa.pub from source machine.
 
 Tested on Ubuntu 14.04, should work on other Ubuntu versions.
 
