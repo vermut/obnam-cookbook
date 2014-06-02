@@ -1,0 +1,9 @@
+[config]
+root=<%= @backup_targets.join(',') %>
+repository = sftp://<%= @backup_id %>@<%= @backup_host %>/home/<%= @backup_id %>
+exclude-caches = true
+log = /var/log/obnam.log
+strict-ssh-host-keys=true
+ssh-key=/root/.ssh/id_rsa
+keep=<%= @keep %>
+
